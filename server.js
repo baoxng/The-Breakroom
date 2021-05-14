@@ -6,7 +6,7 @@ const MongoDBStore= require('connect-mongodb-session')(session);
 const routes = require("./routes");
 
 const app = express();
-const PORT = process.env.PORT || 3031;
+const PORT = process.env.PORT || 3001;
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
