@@ -18,6 +18,7 @@
   "homepage": "https://github.com/baoxng/The-Breakroom#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "connect-mongodb-session": "^2.4.1",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
