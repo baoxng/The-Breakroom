@@ -8,12 +8,6 @@ const Homepage = () => {
     return (
         <Container fluid>
             <Row>
-                <Col size="md-6">
-                    <p>is it working</p>
-                </Col>
-                <Col size="md-6 sm-12">
-                    <p>i hope</p>
-                </Col>
             </Row>
             <Row>
                 <Game />
