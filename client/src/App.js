@@ -11,7 +11,10 @@ function App() {
       <Homepage />
       <Footer />
     </div>
+    
   );
 }
+
+
 
 export default App;
