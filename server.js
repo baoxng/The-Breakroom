@@ -18,17 +18,16 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //Start session
-app.use(require('express-session')({
-  secret: 'This is a secret',
+app.use(session({
+  store: new MongoStore({
+      url: process.env.DATABASE_URL
+  }),
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: false,
   cookie: {
-    maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
-  },
-  store: store,
-  // Boilerplate options, see:
-  // * https://www.npmjs.com/package/express-session#resave
-  // * https://www.npmjs.com/package/express-session#saveuninitialized
-  resave: true,
-  saveUninitialized: true
+      maxAge: 1000 * 60 * 60 * 24 * 7 * 2 // two weeks
+  }
 }));
 
 // Add routes, both API and view
