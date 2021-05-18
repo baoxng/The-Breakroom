@@ -2,6 +2,7 @@ import React from "react";
 
 function Nav() {
     return (
+        <div className="sticky-top">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" style={{marginLeft: '10px'}} href="/">
             The Breakroom
@@ -42,6 +43,7 @@ function Nav() {
             
         </section>
       </nav>
+      </div>
     )
 }
 
