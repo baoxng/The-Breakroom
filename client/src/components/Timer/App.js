@@ -1,7 +1,7 @@
 import './App.css';
 import CountDownTimer from './CountDownTimer';
 
-function App() {
+function TimerApp() {
 
   const hoursMinSecs = {hours:0, minutes: 15, seconds: 00}
   
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default TimerApp;
