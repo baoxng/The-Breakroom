@@ -9,7 +9,6 @@ const Homepage = () => {
         <Container fluid>
             <Row>
                 <p>
-                    text
                     <TimerApp />
                 </p>
             </Row>
