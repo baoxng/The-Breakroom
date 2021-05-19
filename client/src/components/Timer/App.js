@@ -1,4 +1,4 @@
-import './timerApp.css';
+import './App.css';
 import CountDownTimer from './timer.js';
 
 function TimerApp() {
