@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 
 //Start session
 app.use(session({
-  store: new MongoStore({
+  store: new MongoDBStore({
       url: process.env.DATABASE_URL
   }),
   secret: process.env.SECRET_KEY,

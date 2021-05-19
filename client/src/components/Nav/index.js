@@ -28,7 +28,7 @@ function Nav() {
                 
                 </li>
                 <li className="nav-item active">
-                <a className="nav-link" href="/login">
+                <a className="nav-link" href="/Login">
                 Log In
                 </a>
                 </li>
