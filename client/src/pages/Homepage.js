@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
-import TimerApp from "../components/Timer/App";
+import TimerApp from "../components/Timer/timerApp";
 // import Jumbotron from "../components/Jumbotron";
 // import Nav from "../components/Nav";
 
@@ -8,9 +8,10 @@ const Homepage = () => {
     return (
         <Container fluid>
             <Row>
-            </Row>
-            <Row>
-                <TimerApp />
+                <p>
+                    text
+                    <TimerApp />
+                </p>
             </Row>
         </Container>
     );
