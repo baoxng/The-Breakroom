@@ -1,7 +1,7 @@
 // import './App';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from './components/Nav'
+import { HashRouter, Route, Switch } from "react-router-dom";
+import Header from './components/Header'
 import Homepage from './pages/Homepage';
 import GameDashboard from './pages/GameDashboard';
 import Gameroom from './pages/Gameroom';
@@ -15,9 +15,9 @@ import Login from "./components/Login/login";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
     <div className="App">
-      <Nav />
+      <Header />
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/homepage" component={Homepage} />
@@ -33,7 +33,7 @@ function App() {
       </Switch>
       <Footer />
     </div>
-    </Router>
+    </HashRouter>
   );
 }
 
