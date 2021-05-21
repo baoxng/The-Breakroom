@@ -6,7 +6,6 @@ const Homepage = () => {
     return (
         <Container fluid>
             <Row>
-                <Jumbotron />
                 <p>
                     <TimerApp />
                 </p>
