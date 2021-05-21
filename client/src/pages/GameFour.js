@@ -1,8 +1,7 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
 import GameFruitmachine from "../components/Game4";
-// import Jumbotron from "../components/Jumbotron";
-// import Nav from "../components/Nav";
+import TimerApp from "../components/Timer/App";
 
 const GameFour = () => {
     return (
@@ -12,6 +11,7 @@ const GameFour = () => {
                     <GameFruitmachine />
                 </Col>
                 <Col size="md-3">
+                    <TimerApp />
                     <h3>Pixel Slots Fruit Machine</h3>
                     <p>Wind down with this simple and easy-to-play slots game! Play to win more spins, completely free of charge!</p>
                     <h5>How to Play:</h5>

@@ -1,8 +1,7 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
 import GameEscape from "../components/Game2";
-// import Jumbotron from "../components/Jumbotron";
-// import Nav from "../components/Nav";
+import TimerApp from "../components/Timer/App";
 
 const GameTwo = () => {
     return (
@@ -12,6 +11,7 @@ const GameTwo = () => {
                     <GameEscape />
                 </Col>
                 <Col size="md-3">
+                <TimerApp />
                     <h3>Narrow Escape</h3>
                     <p>Try to escape the deadly puzzles in this challenging and fun one-touch game!</p>
                     <h5>How to Play:</h5>
