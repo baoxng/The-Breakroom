@@ -9,7 +9,6 @@ const Homepage = () => {
             <Row>
                 <p>
                     <TimerApp />
-                    <ChatApp />
                 </p>
             </Row>
         </Container>
