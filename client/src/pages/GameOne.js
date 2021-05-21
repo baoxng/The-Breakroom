@@ -1,8 +1,7 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
 import Game from "../components/Game1";
-// import Jumbotron from "../components/Jumbotron";
-// import Nav from "../components/Nav";
+import TimerApp from "../components/Timer/App";
 
 const GameOne = () => {
     return (
@@ -12,6 +11,7 @@ const GameOne = () => {
                     <Game />
                 </Col>
                 <Col size="md-3">
+                    <TimerApp />
                     <h3>
                         Amoeba Online
                     </h3>
@@ -19,8 +19,9 @@ const GameOne = () => {
                     <h5>How to Play:</h5>
                     <p>Eating cells will help you grow larger. The larger you are, the bigger cells you can eat, which will allow you to monch the competition. Just don't get eaten in your quest to be the biggest!</p>
                     <h5>Controls:</h5>
-                    <p>PC: Your amoeba will follow your cursor</p>
-                    <p>Mobile: Your amoeba will go to where the screen is touched</p>
+                    <p>Mobile: Your amoeba will go to where the screen is touched.</p>
+                    <p>PC: Your amoeba will follow your cursor.</p>
+                    
                     <h5>Credit:</h5>
                     <p>Taken from <a href="https://play.idevgames.co.uk/game/amoeba-online">this site</a> and created by <a href="https://play.idevgames.co.uk/profile/iDev">iDev</a>.</p>
                 </Col>
