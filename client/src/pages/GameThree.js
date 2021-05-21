@@ -1,8 +1,7 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
 import GameSlime from "../components/Game3";
-// import Jumbotron from "../components/Jumbotron";
-// import Nav from "../components/Nav";
+import TimerApp from "../components/Timer/App";
 
 const GameThree = () => {
     return (
@@ -12,6 +11,7 @@ const GameThree = () => {
                     <GameSlime />
                 </Col>
                 <Col size="md-3">
+                    <TimerApp />
                     <h3>Tap Slime</h3>
                     <p>Play as a little cannon and defend the center from the slimes! Rack up a high score defending your base in this simple and quick game.</p>
                     <h5>How to Play:</h5>
