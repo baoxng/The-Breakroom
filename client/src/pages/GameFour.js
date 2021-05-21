@@ -7,10 +7,10 @@ const GameFour = () => {
     return (
         <Container fluid>
             <Row>
-                <Col size="md-9">
+                <Col size="md-8">
                     <GameFruitmachine />
                 </Col>
-                <Col size="md-3">
+                <Col size="md-4">
                     <TimerApp />
                     <div className="gameDesc">
                         <div className="gameDescBorder">
