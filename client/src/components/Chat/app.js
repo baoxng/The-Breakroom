@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import { useAuth0 } from "./auth0";
 import ChatView from "./Chat";
 
