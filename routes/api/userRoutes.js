@@ -14,4 +14,8 @@ router
     .put(userController.update)
     .delete(userController.remove);
 
+    router
+    .route("/auth")
+    .post(userController.findAll)
+    
 module.exports = router;
