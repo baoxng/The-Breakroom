@@ -1,0 +1,19 @@
+.gameOne {
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    max-inline-size: 1050px;
+}
+
+.gameDescBorder {
+    margin: 5px;
+    
+}
+
+.gameDesc {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 3px 3px;
+    
+}
