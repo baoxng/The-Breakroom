@@ -3,7 +3,7 @@ import "./App.css";
 import { useAuth0 } from "./auth0";
 import ChatView from "./Chat";
 
-function App() {
+function ChatApp() {
   useEffect(() => {}, []);
 
   const { loading, user, loginWithRedirect } = useAuth0();
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default ChatApp;
