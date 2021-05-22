@@ -1,7 +1,8 @@
 import React from "react";
 // import ChatApp from "../components/Chat/app";
-import { Col, Row, Container } from "../components/Grid";
+import { Row, Container } from "../components/Grid";
 import TimerApp from "../components/Timer/App";
+import ChatApp from "../components/Chat/App";
 
 const Homepage = () => {
     return (
@@ -9,6 +10,7 @@ const Homepage = () => {
             <Row>
                 <p>
                     <TimerApp />
+                    <ChatApp />
                 </p>
             </Row>
         </Container>

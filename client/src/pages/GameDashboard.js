@@ -1,10 +1,10 @@
 import React from "react";
-import { Col, Row, Container } from "../components/Grid";
+import { Row, Container } from "../components/Grid";
 
 // import GameSpacedash from "../components/Game5";
 // import Jumbotron from "../components/Jumbotron";
 // import Nav from "../components/Nav";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const GameDashboard = () => {
     return (

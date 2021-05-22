@@ -1,23 +1,60 @@
-// import React, { useEffect } from "react";
-// import { useAuth0 } from "./auth0";
-// import ChatView from "./Chat/chat.js";
+import React from 'react';
+import { StreamChat } from 'stream-chat';
+import {
+  Chat,
+  Channel,
+  ChannelHeader,
+  ChannelList,
+  ChannelListMessenger,
+  ChannelPreviewMessenger,
+  MessageInput,
+  MessageInputFlat,
+  MessageList,
+  Thread,
+  Window,
+} from 'stream-chat-react';
+import 'stream-chat-react/dist/css/index.css';
+import './App.css';
 
-// function ChatApp() {
-//   useEffect(() => {}, []);
+const apiKey = process.env.REACT_APP_STREAM_KEY;
+const userId = process.env.REACT_APP_USER_ID;
+const userToken = process.env.REACT_APP_USER_TOKEN;
+const theme = 'light';
 
-//   const { loading, user, loginWithRedirect } = useAuth0();
+const filters = { type: 'messaging' };
+const options = { state: true, presence: true, limit: 10 };
+const sort = {
+  cid: 1,
+  last_message_at: -1,
+  updated_at: -1,
+};
 
-//   if (loading) {
-//     return <div>Loading...</div>;
-//   }
+const chatClient = StreamChat.getInstance(apiKey);
 
-//   return (
-//     <div className="App">
-//       {!user && loginWithRedirect({})}
+if (process.env.REACT_APP_CHAT_SERVER_ENDPOINT) {
+  chatClient.setBaseURL(process.env.REACT_APP_CHAT_SERVER_ENDPOINT);
+}
 
-//       {user && <ChatView />}
-//     </div>
-//   );
-// }
+chatClient.connectUser({ id: userId }, userToken);
 
-// export default ChatApp;
+const ChatApp = () => (
+  <Chat client={chatClient} theme={`messaging ${theme}`}>
+    <ChannelList
+      List={ChannelListMessenger}
+      Preview={ChannelPreviewMessenger}
+      filters={filters}
+      sort={sort}
+      options={options}
+    />
+    <Channel>
+      <Window>
+        <ChannelHeader />
+        <MessageList />
+        <MessageInput Input={MessageInputFlat} focus />
+      </Window>
+      <Thread />
+    </Channel>
+  </Chat>
+);
+
+export default ChatApp;
