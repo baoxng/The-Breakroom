@@ -36,7 +36,11 @@ if (process.env.REACT_APP_CHAT_SERVER_ENDPOINT) {
   chatClient.setBaseURL(process.env.REACT_APP_CHAT_SERVER_ENDPOINT);
 }
 
-chatClient.connectUser({ id= username }, userToken);
+chatClient.connectUser(  {
+  id: 'morning-thunder-9',
+  name: 'morning',
+  image: 'https://getstream.io/random_png/?id=morning-thunder-9&name=morning',
+}, userToken);
 
 const ChatApp = () => (
   <Chat client={chatClient} theme={`messaging ${theme}`}>
