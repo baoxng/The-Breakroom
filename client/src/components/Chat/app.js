@@ -16,6 +16,7 @@ import {
 import 'stream-chat-react/dist/css/index.css';
 import './App.css';
 
+
 const apiKey = process.env.REACT_APP_STREAM_KEY;
 const userId = process.env.REACT_APP_USER_ID;
 const userToken = process.env.REACT_APP_USER_TOKEN;
@@ -35,7 +36,7 @@ if (process.env.REACT_APP_CHAT_SERVER_ENDPOINT) {
   chatClient.setBaseURL(process.env.REACT_APP_CHAT_SERVER_ENDPOINT);
 }
 
-chatClient.connectUser({ id: userId }, userToken);
+chatClient.connectUser({ id= username }, userToken);
 
 const ChatApp = () => (
   <Chat client={chatClient} theme={`messaging ${theme}`}>
