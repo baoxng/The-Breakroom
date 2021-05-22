@@ -6,7 +6,7 @@ const MongoDBStore= require('connect-mongodb-session')(session);
 const routes = require("./routes");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -17,18 +17,18 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build")); 
 }
 
-//Start session
-// app.use(session({
-//   store: new MongoDBStore({
-//       url: process.env.DATABASE_URL
-//   }),
-//   secret: process.env.SECRET_KEY,
-//   resave: false,
-//   saveUninitialized: false,
-//   cookie: {
-//       maxAge: 1000 * 60 * 60 * 24 * 7 * 2 // two weeks
-//   }
-// }));
+// Start session
+app.use(session({
+  store: new MongoDBStore({
+      url: process.env.DATABASE_URL
+  }),
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+      maxAge: 1000 * 60 * 60 * 24 * 7 * 2 // two weeks
+  }
+}));
 
 // Add routes, both API and view
 app.use(routes);

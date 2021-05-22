@@ -35,7 +35,9 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.12.7",
-    "react-bootstrap": "^1.6.0"
+    "react-bootstrap": "^1.6.0",
+    "stream-chat": "^3.10.0",
+    "stream-chat-react": "^6.0.2"
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.3.1"
